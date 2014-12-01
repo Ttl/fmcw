@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKL26Z128xxx4</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M0+</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>16k</SRAMsize>
+    <FLASHsize>128k</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <LinkerCommandFile>/home/henrik/workspace.kds/fmcw/Project_Settings/Linker_Files/ProcessorExpert.ld</LinkerCommandFile>
+    <IncludePaths>
+      <Path>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/</Path>
+      <Path>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/iofiles/</Path>
+      <Path>/home/henrik/workspace.kds/fmcw/Sources/</Path>
+      <Path>/home/henrik/workspace.kds/fmcw/Generated_Code/</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>/home/henrik/workspace.kds/fmcw/Generated_Code/</Path>
+      <Path>/home/henrik/workspace.kds/fmcw/Project_Settings/Startup_Code/</Path>
+      <Path>/home/henrik/workspace.kds/fmcw/Sources/</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/AD1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/AdcLdd1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CDC1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CI2C1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CS1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Cpu.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/DA1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/DacLdd1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/IntI2cLdd1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/PE_LDD.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Rx1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TI1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TU1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TimerIntLdd1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Tx1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/USB0.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/USB1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/UTIL1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Vectors.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/WAIT1.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_cdc.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_cdc_pstn.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_class.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_dci_kinetis.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_descriptor.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_driver.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_framework.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/wdt_kinetis.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Project_Settings/Startup_Code/startup.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Sources/Events.c</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Sources/main.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/AD1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/AdcLdd1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CDC1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CI2C1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/CS1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Cpu.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/DA1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/DacLdd1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/FSL_USB_Stack_Config.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/IO_Map.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/IntI2cLdd1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/PE_Const.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/PE_Error.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/PE_LDD.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/PE_Types.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Rx1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TI1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TU1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/TimerIntLdd1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/Tx1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/USB0.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/USB1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/USB_Config.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/UTIL1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/WAIT1.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/derivative.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/hidef.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/types.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_bdt_kinetis.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_cdc.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_cdc_pstn.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_class.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_dci_kinetis.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_dciapi.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_descriptor.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_devapi.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_framework.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/usb_user_config.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Generated_Code/wdt_kinetis.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Sources/Events.h</PathName>
+      <PathName>/home/henrik/workspace.kds/fmcw/Sources/main.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/iofiles/MKL26Z4.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/ADC_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/CMP_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/COP_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/DAC_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/DMAMUX_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/DMA_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/FTFA_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/GPIO_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/I2C_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/LPTMR_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/MCM_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Types.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/PIT_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/PORT_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/RTC_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/SAI_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/SIM_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/SPI_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/SysTick_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/TPM_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/UART0_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/UART_PDD.h</PathName>
+      <PathName>/opt/Freescale/KDS_1.1.1/eclipse/ProcessorExpert/lib/Kinetis/pdd/inc/USB_PDD.h</PathName>
+    </GeneratedHs>
+  </FILES>
+  <OPTIONS>
+  </OPTIONS>
+</export>

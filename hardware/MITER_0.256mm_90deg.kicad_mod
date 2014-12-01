@@ -1,0 +1,15 @@
+(module MITER_0.256mm_90deg (layer F.Cu) (tedit 5411FA76)
+  (fp_text reference MITER_0.256mm_90deg (at 0.13 1.75) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (fp_text value VAL** (at 0.17 -2.29) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
+  (fp_line (start 0.21 0.05) (end 0.36 0.05) (layer F.Cu) (width 0.157))
+  (fp_line (start -0.05 -0.41) (end -0.05 -0.21) (layer F.Cu) (width 0.157))
+  (fp_line (start 0.2 0.05) (end -0.05 -0.2) (layer F.Cu) (width 0.156))
+  (fp_line (start 0.05 -0.125) (end 0.05 -0.425) (layer F.Cu) (width 0.157))
+  (fp_line (start 0.35 -0.05) (end 0.125 -0.05) (layer F.Cu) (width 0.157))
+  (pad 2 smd rect (at 0 -0.475) (size 0.256 0.3) (layers F.Cu))
+  (pad 1 smd rect (at 0.475 0 90) (size 0.256 0.3) (layers F.Cu))
+)

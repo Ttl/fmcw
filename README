@@ -1,0 +1,14 @@
+Frequency modulated radar hardware, firmware and processing files.
+
+List of contents:
+
+hardware: Contains KiCad schematic and board files. Made using KiCad version 2014-10-17
+and might not open with a too old version.
+
+firmware: Firmware for the Freescale Kinetis KL26Z microcontroller. Should be opened
+using Kinetis Design Studio (http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=KDS_IDE).
+
+processing: PC code for using the radar and processing the resulting data.
+"fmcw.py" uses the radar and logs the data.
+"fmcw_process.py" process the recorded data and plots time-range plot of them.
+"list_plot.py" plots individual sweep captures from the recorded data for debugging purposes.
