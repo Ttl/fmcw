@@ -1,5 +1,7 @@
 Frequency modulated radar hardware, firmware and processing files.
 
+For more information see: http://hforsten.com/6-ghz-frequency-modulated-radar.html
+
 List of contents:
 
 hardware: Contains KiCad schematic and board files. Made using KiCad version 2014-10-17
