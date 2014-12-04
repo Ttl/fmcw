@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:wlan_radar
-LIBS:sam_board
 LIBS:wlan_radar-cache
 EELAYER 25 0
 EELAYER END
@@ -733,4 +732,31 @@ Wire Wire Line
 	7700 2850 7800 2850
 Text HLabel 7800 2850 2    60   Output ~ 0
 PA_EN
+$Comp
+L C C52
+U 1 1 5480CAAD
+P 2250 5000
+F 0 "C52" H 2250 5100 40  0000 L CNN
+F 1 "100n" H 2256 4915 40  0000 L CNN
+F 2 "SMD_Packages:SMD-0402_c" H 2288 4850 30  0001 C CNN
+F 3 "" H 2250 5000 60  0000 C CNN
+	1    2250 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4750 2250 4800
+Connection ~ 2250 4750
+Wire Wire Line
+	2250 5200 2250 5250
+$Comp
+L GND #PWR065
+U 1 1 5480CC49
+P 2250 5250
+F 0 "#PWR065" H 2250 5250 30  0001 C CNN
+F 1 "GND" H 2250 5180 30  0001 C CNN
+F 2 "" H 2250 5250 60  0000 C CNN
+F 3 "" H 2250 5250 60  0000 C CNN
+	1    2250 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
