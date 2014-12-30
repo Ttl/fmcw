@@ -331,7 +331,7 @@ if __name__ == "__main__":
             analogPlot = FMCWAnalogPlot(radar.measure, 4e-6, 5.9e9, 6.1e9, 20e-6*(800)/1., None, 1000, logging='fmcw')
             anim = animation.FuncAnimation(fig, analogPlot.update,
                                              fargs=(pt,pf,axt,axf),
-                                             interval=0)
+                                             interval=1)
         plt.show()
 
     finally:
