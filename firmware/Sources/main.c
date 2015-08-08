@@ -61,7 +61,7 @@
 
 #define MCP_I2C_ADDR 0x2F
 /* Step size for autogain adjustment */
-#define MCP_STEP 1
+#define MCP_STEP 5
 
 
 #define max(x,y) ((x)>(y)?(x):(y))
@@ -84,7 +84,7 @@ volatile uint16_t adc_buff_i = 0;
 volatile uint16_t dac_min = DAC_MIN_INIT;
 volatile uint16_t dac_max = DAC_MAX_INIT;
 
-uint16_t skip_samples = 300;
+uint16_t skip_samples = 200;
 
 /* Status of the measurement */
 meas_enum meas_status = STOP;
@@ -103,6 +103,7 @@ void stop_meas(void) {
 }
 
 void start_meas(void) {
+	//PA_ON();
 	adc_err = ERR_OK;
 	adc_buff_i = 0;
 	//dac_out = dac_min;
@@ -135,6 +136,7 @@ void start_meas(void) {
 		while (AD1_GetValue16(&adc_buff[adc_buff_i]) != ERR_OK);
 		adc_buff_i++;
 	}
+	//PA_OFF();
 	/* Store the old gain for logging */
 	old_mcp_val = mcp_val;
 	/* Automatic gain control */

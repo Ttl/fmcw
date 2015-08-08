@@ -3,8 +3,8 @@
   <Header>
     <Name>fmcw</Name>
     <SavedBy>henrik</SavedBy>
-    <ModificationStamp>130</ModificationStamp>
-    <Date>2014-11-30</Date>
+    <ModificationStamp>138</ModificationStamp>
+    <Date>2015-08-08</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.10.0.RT6_b1433-0202</PEversion>
   </Header>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>51</ProjectCompNumb>
+    <ProjectCompNumb>57</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -4984,7 +4984,7 @@
               <ItemSymbol>_CnvTmg</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value>init:1.375 µs;prec:20%;RTS:none;clksrc_presc[SpeedMode0]Auto select;extcomp_presc[SpeedMode0]27;clksrc_presc[SpeedMode1]Auto select;clksrc_presc[SpeedMode2]Auto select;clksrc_presc[SpeedMode3]Auto select;clksrc_presc[SpeedMode4]Auto select;clksrc_presc[SpeedMode5]Auto select;clksrc_presc[SpeedMode6]Auto select;clksrc_presc[SpeedMode7]Auto select</Value>
+              <Value>init:3.916667 µs;prec:20%;RTS:none;clksrc_presc[SpeedMode0]Auto select;extcomp_presc[SpeedMode0]47;clksrc_presc[SpeedMode1]Auto select;clksrc_presc[SpeedMode2]Auto select;clksrc_presc[SpeedMode3]Auto select;clksrc_presc[SpeedMode4]Auto select;clksrc_presc[SpeedMode5]Auto select;clksrc_presc[SpeedMode6]Auto select;clksrc_presc[SpeedMode7]Auto select</Value>
               <RuntimeSetting>0</RuntimeSetting>
               <ReqDevPrescHigh>-1</ReqDevPrescHigh>
               <ReqDevPrescLow>-1</ReqDevPrescLow>
@@ -14539,7 +14539,7 @@
                     <ReadOnly>false</ReadOnly>
                     <UserReadOnly>false</UserReadOnly>
                     <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-                    <Value>1</Value>
+                    <Value>128</Value>
                     <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
                     <Base>DEC</Base>
                   </ItemState>
@@ -14775,7 +14775,7 @@
                     <ReadOnly>false</ReadOnly>
                     <UserReadOnly>false</UserReadOnly>
                     <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-                    <Value>1</Value>
+                    <Value>64</Value>
                     <ItemWasNeverEnabledInChgScript>true</ItemWasNeverEnabledInChgScript>
                     <Base>DEC</Base>
                   </ItemState>
