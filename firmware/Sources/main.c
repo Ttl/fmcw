@@ -61,7 +61,7 @@
 
 #define MCP_I2C_ADDR 0x2F
 /* Step size for autogain adjustment */
-#define MCP_STEP 5
+#define MCP_STEP 2
 
 
 #define max(x,y) ((x)>(y)?(x):(y))
@@ -84,7 +84,8 @@ volatile uint16_t adc_buff_i = 0;
 volatile uint16_t dac_min = DAC_MIN_INIT;
 volatile uint16_t dac_max = DAC_MAX_INIT;
 
-uint16_t skip_samples = 200;
+// Set runtime
+uint16_t skip_samples = 0;
 
 /* Status of the measurement */
 meas_enum meas_status = STOP;
@@ -120,11 +121,15 @@ void start_meas(void) {
 
 	while( meas_status == RUN && adc_buff_i < ADC_BUFF_SIZE && !meas_start) {
 		AD1_Measure(0); /* Start conversion */
-		/* Skip first few samples, because we don't really care about them
-		 * since they often have much higher amplitude than other samples */
-		CDC1_App_Task(cdc_buffer, sizeof(cdc_buffer));
+		uint16_t val;
+		if (adc_buff_i > 0) {
+			val = adc_buff[adc_buff_i-1];
+		} else {
+			val = 0;
+		}
+		/* Skip first few samples, from the autogain algorithm since there is a
+		 * discontinuity causing a big spike when new sweep is started */
 		if (adc_buff_i > skip_samples) {
-				uint16_t val = adc_buff[adc_buff_i-1];
 				if (val > val_max) {
 					val_max = val;
 				}
@@ -136,6 +141,8 @@ void start_meas(void) {
 		while (AD1_GetValue16(&adc_buff[adc_buff_i]) != ERR_OK);
 		adc_buff_i++;
 	}
+	skip_samples = adc_buff_i/3;
+	CDC1_App_Task(cdc_buffer, sizeof(cdc_buffer));
 	//PA_OFF();
 	/* Store the old gain for logging */
 	old_mcp_val = mcp_val;
