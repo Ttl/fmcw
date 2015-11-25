@@ -1,14 +1,19 @@
 Frequency modulated radar hardware, firmware and processing files.
 
-For more information see: http://hforsten.com/6-ghz-frequency-modulated-radar.html
+For more information see:
+
+http://hforsten.com/6-ghz-frequency-modulated-radar.html
+
+and
+
+http://hforsten.com/homemade-synthetic-aperture-radar.html
+
 
 List of contents:
 
-hardware: Contains KiCad schematic and board files. Made using KiCad version 2014-10-17
-and might not open with a too old version.
+hardware: Contains KiCad schematic and board files. Made using KiCad version 2014-10-17 and might not open with a too old version.
 
-firmware: Firmware for the Freescale Kinetis KL26Z microcontroller. Should be opened
-using Kinetis Design Studio (http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=KDS_IDE).
+firmware: Firmware for the Freescale Kinetis KL26Z microcontroller. Should be opened using Kinetis Design Studio (http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=KDS_IDE).
 
 processing: PC code for using the radar and processing the resulting data.
 "fmcw.py" uses the radar and logs the data.
