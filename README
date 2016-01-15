@@ -15,6 +15,8 @@ hardware: Contains KiCad schematic and board files. Made using KiCad version 201
 
 firmware: Firmware for the Freescale Kinetis KL26Z microcontroller. Should be opened using Kinetis Design Studio (http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=KDS_IDE).
 
+Firmware depends on mcuoneclipse components available at here: http://sourceforge.net/projects/mcuoneclipse/files/PEx%20Components/
+
 processing: PC code for using the radar and processing the resulting data.
 "fmcw.py" uses the radar and logs the data.
 "fmcw_process.py" process the recorded data and plots time-range plot of them.
