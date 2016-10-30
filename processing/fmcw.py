@@ -133,6 +133,7 @@ class FMCWAnalogPlot:
         self.sample_rate = sample_rate
         self.freq_start = freq_start
         self.freq_end = freq_end
+        self.bandwidth = freq_end - freq_start
         self.sweep_length = sweep_length
         self.interp = interp
         self.interp_points = interp_points
@@ -140,7 +141,6 @@ class FMCWAnalogPlot:
         if self.logging != False:
             self.log_file = open(self.logging+datetime.now().strftime('%Y-%m-%dT%H-%M.log'), "w")
 
-        self.k = (self.freq_end - self.freq_start)/self.sweep_length
         self.t_start = None
 
     def update(self, frameNum, pt, pf, axt, axf):
@@ -175,11 +175,11 @@ class FMCWAnalogPlot:
 
         yf,xf = fft(y, self.sample_rate, np.hamming)
 
-        #yf = yf[:100]
-        #xf = xf[:100]
+        yf = yf[:100]
+        xf = xf[:100]
 
         #Frequency to range conversion
-        xf = [3e8*i/(2*self.k) for i in xf]
+        xf = [3e8*i*self.sweep_length/(2*self.bandwidth) for i in xf]
 
         if self.interp and self.interp_points:
             fint = interpolate.interp1d(xf, yf, kind=self.interp)
@@ -216,7 +216,7 @@ def fft(data, sample_rate, window=None):
     if window:
         w = window(len(data))
         data = [data[i]*w[i] for i in xrange(len(w))]
-    fs = 1/float(sample_rate)
+    fs = 0.5/float(sample_rate)
     y = map(abs,np.fft.rfft(data))
     fstep = fs/len(y)
     return (y,[fstep*i for i in xrange(0,len(y))])
@@ -328,7 +328,7 @@ if __name__ == "__main__":
                                              fargs=(pt,pf,axt,axf),
                                              interval=1)
         else:
-            analogPlot = FMCWAnalogPlot(radar.measure, 4e-6, 5.9e9, 6.1e9, 20e-6*(800)/1., None, 1000, logging='fmcw')
+            analogPlot = FMCWAnalogPlot(radar.measure, 24e-6, 5.99e9, 6.1e9, 20e-6*(1000)/1., None, 1000, logging='fmcw')
             anim = animation.FuncAnimation(fig, analogPlot.update,
                                              fargs=(pt,pf,axt,axf),
                                              interval=1)
